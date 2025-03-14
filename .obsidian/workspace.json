@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "fd3de4531fc8ba60",
+    "type": "split",
+    "children": [
+      {
+        "id": "0219abeb2632d38d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c4804cf2b338af85",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "RS/Module 1/Practice Question.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Practice Question"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e6a224ded9584729",
+    "type": "split",
+    "children": [
+      {
+        "id": "28b1514f728401c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "232829979083e703",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f788f0d87532d9c2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "77c448f910332078",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f6768ce74a65e19b",
+    "type": "split",
+    "children": [
+      {
+        "id": "e567a7b246e91b60",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6fe0a95ec5058c96",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Language Modeling.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Language Modeling"
+            }
+          },
+          {
+            "id": "151ddea23e178d2c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Language Modeling.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Language Modeling"
+            }
+          },
+          {
+            "id": "a56656a00ab13f0d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "dceddf1fc0ed7d40",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Language Modeling.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Language Modeling"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c4804cf2b338af85",
+  "lastOpenFiles": [
+    "Untitled 3.md",
+    "RS/Module 1/Practice Question.md",
+    "Welcome.md",
+    "Untitled 2.md",
+    "Untitled 1.md",
+    "RS/Module 1/Ranking Measures.md",
+    "Images/Pasted image 20250311083131.png",
+    "RS/Module 1/Introduction.md",
+    "Images",
+    "NLTP/Module 1",
+    "NLTP",
+    "RS/Module 1/Untitled.md",
+    "RS/Module 1/Recommendation System Properties.md",
+    "RS/Module 1",
+    "RS",
+    "NLTP/Module 1/Language Modeling.md",
+    "NLTP/Module 1/Evaluation Language Models.md",
+    "Images/Pasted image 20250311084355.png",
+    "Images/Pasted image 20250311084207.png",
+    "Images/Pasted image 20250311083216.png"
+  ]
+}
