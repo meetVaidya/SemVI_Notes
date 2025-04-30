@@ -1,0 +1,5 @@
+Based on the document, the development of recommender knowledge bases is a critical aspect, especially for constraint-based technologies [1]. A major precondition for successfully applying these technologies in commercial settings is the availability of tools and methods that actively support knowledge engineers and domain experts in the development and maintenance of these applications [1]. The goal is to limit the knowledge acquisition bottleneck as much as possible [1].
+
+A key challenge in this development process is the discrepancy between knowledge engineers and domain experts [1]. This is often due to domain experts having very limited programming skills [1]. Consequently, domain experts are typically responsible *only* for providing the knowledge itself, but not for formalizing it into the executable representation which constitutes the recommender knowledge base [1].
+
+Environments like the commercially available CWAdvisor aim to address this issue [1]. Their major goal is to reduce the knowledge acquisition bottleneck by supporting autonomous knowledge base development and maintenance processes specifically for domain experts [1].
