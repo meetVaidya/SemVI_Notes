@@ -1,12 +1,12 @@
 module 4 5 6 
 practice ->
-- [ ] min max numerical -> Module 4
+- [x] min max numerical -> Module 4
 - [ ] Lucas kanade working -> Module 6
 - [ ] assumptions in Lucas and horn Schunck 
 - [ ] the basic idea behind the Horn-Schunck method for optical flow estimation. -> Module 6
 - [ ] derivation of Lucas kanade -> Module 6
-- [ ] bilinear interpolation numerical -> Module 5
-- [ ] jsd numericals -> Module 4
+- [x] bilinear interpolation numerical -> Module 5
+- [x] jsd numericals -> Module 4
 - [ ] gan cgan dcan diff -> Module 4
 - [ ] unet pspnet fpn difference -> Module 5
 - [ ] advantage and disadvantage of gan unet pspnet fpn -> Module 5
