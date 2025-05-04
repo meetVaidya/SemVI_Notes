@@ -3,14 +3,10 @@
 
 #### Initialization Methods
 - **Detection-Based Tracking (DBT)**:
-    - **Concept**: Objects are first detected in each video frame using a pre-trained detector (e.g., deep learning models like YOLO or Faster R-CNN), and then these detections are linked across frames to form continuous tracks.
-        
-    - **Process**: Relies on automated detection to identify objects in every frame, followed by associating these detections over time using algorithms like the Hungarian method or data association techniques.
-        
+    - **Concept**: Objects are first detected in each video frame using a pre-trained detector (e.g., deep learning models like YOLO or Faster R-CNN), and then these detection are linked across frames to form continuous tracks.
+    - **Process**: Relies on automated detection to identify objects in every frame, followed by associating these detection over time using algorithms like the Hungarian method or data association techniques.
     - **Advantages**: Adapts well to dynamic scenes with new objects entering or leaving, as it continuously detects objects.
-        
     - **Example**: Tracking multiple pedestrians in a crowded street video by detecting them frame-by-frame and connecting their positions.
-        
     - **Limitation**: Accuracy depends heavily on the quality of the detector; missed detections or false positives can disrupt tracking.
         
 - **Detection-Free Tracking (DFT)**:
