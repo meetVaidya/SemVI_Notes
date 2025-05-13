@@ -39,7 +39,7 @@ $$
 ### Summary
 
 - **Macroaveraging**: Treats all classes equally, useful for balanced datasets or when each class is of equal importance.
-- **Microaveraging**: Considers the overall performance, useful for imbalanced datasets or when larger classes are more important.
+																																																																			- **Microaveraging**: Considers the overall performance, useful for imbalanced datasets or when larger classes are more important.
 
 ### Multi-class Confusion Matrix (3-class)
 ![[Pasted image 20250513221312.png]]
