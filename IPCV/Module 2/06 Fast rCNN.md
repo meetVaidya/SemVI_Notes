@@ -1,5 +1,3 @@
-Okay, let's break down the Fast R-CNN pipeline step-by-step in more detail, following a similar structure to the R-CNN explanation you provided:
-
 **1. Region Proposal Generation (Selective Search):**
 
 *   **Input:** The input is the original image that you want to detect objects in.

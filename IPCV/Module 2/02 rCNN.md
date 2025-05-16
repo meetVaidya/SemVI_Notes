@@ -1,5 +1,3 @@
-Okay, let's break down the R-CNN pipeline step-by-step in more detail:
-
 **1. Region Proposal Generation (Selective Search):**
 
 - **Input:** The input is the original image that you want to detect objects in.

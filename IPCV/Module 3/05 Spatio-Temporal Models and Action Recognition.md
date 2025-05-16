@@ -1,0 +1,73 @@
+## 1. Spatio-Temporal Models
+    - **Definition**: Models designed to capture and learn from data that has both **spatial** (relating to space, e.g., the content of an image frame) and **temporal** (relating to time, e.g., the sequence of frames in a video) dimensions.
+    - **Necessity**: Essential for understanding dynamic scenes, videos, and sequences where changes over time are critical.
+    - **Types of Spatio-Temporal Models**:
+        - **a. 3D Convolutional Neural Networks (3D CNNs)**:
+            - Extend traditional 2D CNNs by using 3D convolutional filters and 3D pooling operations.
+            - 3D filters can convolve across height, width, and the *time* dimension simultaneously, allowing them to directly learn features from both spatial and temporal aspects of video data (e.g., motion patterns from a small stack of frames).
+            - **Example**: C3D (Convolutional 3D).
+        - **b. Recurrent Neural Networks (RNNs) - LSTM, GRU**:
+            - Process sequences frame by frame. Often, spatial features are first extracted from each frame using a 2D CNN, and then these features are fed sequentially into an RNN (like LSTM or GRU) to model temporal dependencies and relationships across frames.
+            - Good for capturing long-term temporal patterns.
+        - **c. Transformers for Video**:
+            - Adapt the Transformer architecture (with self-attention) to handle video data.
+            - Can model long-range dependencies in both space and time.
+            - **Examples**:
+                - **TimeSformer**: Applies self-attention separately across space and then across time, or jointly.
+                - **Video Swin Transformer**: Uses shifted windows for efficient self-attention on video patches.
+                - **ViViT (Video Vision Transformer)**: Various ways to adapt ViT for video, e.g., factorizing spatial and temporal attention.
+    - **Applications**:
+        - Video Classification (assigning a label to an entire video clip).
+        - Action/Activity Recognition.
+        - Video Captioning.
+        - Traffic Forecasting.
+        - Human Pose Tracking in video.
+
+## 2. Action/Activity Recognition
+    - **Definition**: The task of identifying and classifying human actions or activities from images or, more commonly, video sequences.
+        - **Action**: Typically a simple, short-duration movement (e.g., "waving," "running," "kicking").
+        - **Activity**: Often a more complex, longer-duration sequence of actions involving interactions with objects or other people (e.g., "playing basketball," "making a sandwich").
+    - **Challenges**:
+        - **Intra-class Variation**: The same action can be performed in many different ways.
+        - **Inter-class Similarity**: Different actions can look visually similar.
+        - **Viewpoint Variations**: Action appearance changes with camera angle.
+        - **Occlusion**: Parts of the body or action may be hidden.
+        - **Motion Blur**: Fast movements can blur details.
+        - **Background Clutter**: Distracting elements in the scene.
+        - **Temporal Scale**: Actions can vary significantly in duration.
+    - **Popular Approaches**:
+        - **a. Handcrafted Features (Traditional)**:
+            - **Optical Flow**: Represents motion between consecutive frames.
+            - **HOG3D (Histogram of Oriented Gradients in 3D)**: Extends HOG to capture spatio-temporal gradients.
+            - Spatio-Temporal Interest Points (STIPs).
+        - **b. Deep Learning-Based**:
+            - **CNN-LSTM**:
+                - A 2D CNN extracts spatial features from individual frames.
+                - An LSTM (or GRU) processes the sequence of these frame-level features to model temporal dependencies.
+            - **Two-Stream Networks**:
+                - Uses two separate CNN streams:
+                    - **Spatial Stream**: Processes static RGB frames to capture appearance information.
+                    - **Temporal Stream**: Processes stacked optical flow fields (representing motion) between frames.
+                - The outputs of the two streams are fused (e.g., late fusion) for final classification.
+            - **3D CNNs (e.g., C3D, I3D - Inflated 3D ConvNet)**: Directly learn spatio-temporal features from video clips. I3D often inflates pre-trained 2D CNN weights for 3D filters.
+            - **Transformers (e.g., ViViT, TimeSformer, Video Swin)**: Apply self-attention mechanisms to model relationships between video patches across space and time.
+    - **Common Datasets**:
+        - **UCF-101**: 101 action categories, ~13k clips.
+        - **HMDB-51**: 51 action categories, ~7k clips.
+        - **Kinetics (e.g., Kinetics-400, Kinetics-600, Kinetics-700)**: Large-scale, high-quality datasets with hundreds of action classes and hundreds of thousands of video clips.
+        - **ActivityNet**: Focuses on longer, more complex activities.
+    - **Applications**:
+        - Sports Analytics (analyzing player movements, classifying events).
+        - Surveillance and Security (detecting suspicious activities).
+        - Human-Computer Interaction (gesture recognition).
+        - Robotics (understanding human actions to interact or assist).
+        - Healthcare (monitoring patients, fall detection).
+        - Content-based video retrieval.
+
+## 3. Region-Based Convolutional Neural Networks (R-CNNs) - Brief Mention
+    - *This is primarily an object detection family (covered in Module 2) but can be a component in more complex systems that might involve activity recognition if the activity is strongly tied to detected objects and their interactions.*
+    - **Why R-CNN (in general object detection context)**:
+        - Traditional CNNs are good for image classification but struggle with localizing multiple objects.
+        - R-CNN and its successors introduce region proposals for better object detection and localization.
+    - **Types (Recap)**: R-CNN, Fast R-CNN, Faster R-CNN, Mask R-CNN.
+    - **Applications (Recap)**: Object detection, instance segmentation, which can be prerequisites for higher-level scene understanding tasks like activity recognition.

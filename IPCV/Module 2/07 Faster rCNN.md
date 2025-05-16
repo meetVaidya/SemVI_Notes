@@ -1,5 +1,3 @@
-Okay, let's break down the Faster R-CNN pipeline step-by-step in more detail, following a similar structure to the R-CNN explanation you provided:
-
 **1. Feature Extraction (CNN - AlexNet or VGG):**
 
 - **Input:** The entire input image.

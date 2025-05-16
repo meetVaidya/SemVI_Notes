@@ -1,5 +1,5 @@
 #### Definition
-- FPN is a neural network framework that builds a pyramid of features maps at different scales from a single input image, enabling the detection of objects across a wide range of sizes. It is commonly integrated into models like [[Faster rCNN|Faster R-CNN]], Mask R-CNN and RetinaNet.
+- FPN is a neural network framework that builds a pyramid of features maps at different scales from a single input image, enabling the detection of objects across a wide range of sizes. It is commonly integrated into models like [[07 Faster rCNN|Faster R-CNN]], Mask R-CNN and RetinaNet.
 - The primary goal of FPN is to improve detection of objects at multiple scales by combining high-resolution, low-level features (detailed spatial information) with low-resolution, high-level features (semantic information) within an unified pyramid structure.
 - FPN is essential for tasks such as object detection and instance segmentation, where objects in an image can appear at drastically different sizes due to perspective or distance from the camera.
 

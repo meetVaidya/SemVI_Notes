@@ -1,5 +1,3 @@
-Okay, let's break down the YOLO (You Only Look Once) pipeline step-by-step in detail:
-
 **1. Input Image:**
 
 *   **Input:** The input is the original image that you want to detect objects in. The image needs to be preprocessed to a specific size expected by the YOLO network (e.g., 416x416, 608x608, etc.). This resizing might involve padding to maintain the aspect ratio.

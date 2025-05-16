@@ -1,5 +1,3 @@
-Okay, here's a breakdown of the SSD (Single Shot MultiBox Detector) pipeline, following the structure you requested:
-
 **1. Input Image and Feature Extraction (Base Network):**
 
 *   **Input:** The input is the original image that you want to detect objects in.  A common input size is 300x300 or 512x512 pixels.
