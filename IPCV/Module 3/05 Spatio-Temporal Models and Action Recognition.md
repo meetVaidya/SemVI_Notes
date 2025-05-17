@@ -1,27 +1,27 @@
 ## 1. Spatio-Temporal Models
-    - **Definition**: Models designed to capture and learn from data that has both **spatial** (relating to space, e.g., the content of an image frame) and **temporal** (relating to time, e.g., the sequence of frames in a video) dimensions.
-    - **Necessity**: Essential for understanding dynamic scenes, videos, and sequences where changes over time are critical.
-    - **Types of Spatio-Temporal Models**:
-        - **a. 3D Convolutional Neural Networks (3D CNNs)**:
-            - Extend traditional 2D CNNs by using 3D convolutional filters and 3D pooling operations.
-            - 3D filters can convolve across height, width, and the *time* dimension simultaneously, allowing them to directly learn features from both spatial and temporal aspects of video data (e.g., motion patterns from a small stack of frames).
-            - **Example**: C3D (Convolutional 3D).
-        - **b. Recurrent Neural Networks (RNNs) - LSTM, GRU**:
-            - Process sequences frame by frame. Often, spatial features are first extracted from each frame using a 2D CNN, and then these features are fed sequentially into an RNN (like LSTM or GRU) to model temporal dependencies and relationships across frames.
-            - Good for capturing long-term temporal patterns.
-        - **c. Transformers for Video**:
-            - Adapt the Transformer architecture (with self-attention) to handle video data.
-            - Can model long-range dependencies in both space and time.
-            - **Examples**:
-                - **TimeSformer**: Applies self-attention separately across space and then across time, or jointly.
-                - **Video Swin Transformer**: Uses shifted windows for efficient self-attention on video patches.
-                - **ViViT (Video Vision Transformer)**: Various ways to adapt ViT for video, e.g., factorizing spatial and temporal attention.
-    - **Applications**:
-        - Video Classification (assigning a label to an entire video clip).
-        - Action/Activity Recognition.
-        - Video Captioning.
-        - Traffic Forecasting.
-        - Human Pose Tracking in video.
+- **Definition**: Models designed to capture and learn from data that has both **spatial** (relating to space, e.g., the content of an image frame) and **temporal** (relating to time, e.g., the sequence of frames in a video) dimensions.
+- **Necessity**: Essential for understanding dynamic scenes, videos, and sequences where changes over time are critical.
+- **Types of Spatio-Temporal Models**:
+	- **a. 3D Convolutional Neural Networks (3D CNNs)**:
+		- Extend traditional 2D CNNs by using 3D convolutional filters and 3D pooling operations.
+		- 3D filters can convolve across height, width, and the *time* dimension simultaneously, allowing them to directly learn features from both spatial and temporal aspects of video data (e.g., motion patterns from a small stack of frames).
+		- **Example**: C3D (Convolutional 3D).
+	- **b. Recurrent Neural Networks (RNNs) - LSTM, GRU**:
+		- Process sequences frame by frame. Often, spatial features are first extracted from each frame using a 2D CNN, and then these features are fed sequentially into an RNN (like LSTM or GRU) to model temporal dependencies and relationships across frames.
+		- Good for capturing long-term temporal patterns.
+	- **c. Transformers for Video**:
+		- Adapt the Transformer architecture (with self-attention) to handle video data.
+		- Can model long-range dependencies in both space and time.
+		- **Examples**:
+			- **TimeSformer**: Applies self-attention separately across space and then across time, or jointly.
+			- **Video Swin Transformer**: Uses shifted windows for efficient self-attention on video patches.
+			- **ViViT (Video Vision Transformer)**: Various ways to adapt ViT for video, e.g., factorizing spatial and temporal attention.
+- **Applications**:
+	- Video Classification (assigning a label to an entire video clip).
+	- Action/Activity Recognition.
+	- Video Captioning.
+	- Traffic Forecasting.
+	- Human Pose Tracking in video.
 
 ## 2. Action/Activity Recognition
     - **Definition**: The task of identifying and classifying human actions or activities from images or, more commonly, video sequences.
