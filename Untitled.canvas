@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"9821d73bf1c11bf8","type":"text","text":"## Steps in NLP\n1. **Morphological Analysis** : Studies how words are formed from smaller words\n2. **Syntactic Analysis** : Analyzes the grammatical structure of a sentence to understand the meaning behind the sentence\n3. **Semantic Analysis** : Determines the meaning of the word, phrase or sentence beyond its grammatical structure and focuses on actual meaning\n4. **Discourse Analysis** : Understand how the meaning of a sentence is influenced by preceding and following sentences.\n5. **Pragmatic Analysis** : Understand the intended meaning of speaker or writer which may differ from the literal meaning","x":-1149,"y":40,"width":685,"height":400},
+		{"id":"82fab8f4ac94ffcb","x":-1352,"y":560,"width":300,"height":251,"type":"text","text":"#### Morphological Analysis Subtasks\n1. Tokenization\n2. Stop Word Removal\n3. Stemming\n4. Lemmatization\n5. N-gram Model"},
+		{"id":"3bcfc701314a6316","x":-1012,"y":560,"width":280,"height":251,"type":"text","text":"#### Semantic Analysis\n- Determining the meaning of words, phrase & sentences` beyond grammatical structure to interpret actual message"},
+		{"id":"f93fd2c5c871b13b","x":-672,"y":560,"width":377,"height":372,"type":"text","text":"#### Discourse Analysis\n- Understanding how the meaning of a sentence is influence by preceding & following sentence\n#### Pragmatic Analysis\n- Understanding the intended meaning of the speaker or writer which may differ from the literal meaning"},
+		{"id":"9ec49223199ebf71","type":"text","text":"## Definition\n- It refers to the branch in computer science concerned with providing the computers the ability to understand and interpret human languages through text and speech","x":-1149,"y":-320,"width":445,"height":240}
+	],
+	"edges":[
+		{"id":"e3d2b4fa5d8c0f9d","fromNode":"9821d73bf1c11bf8","fromSide":"bottom","toNode":"82fab8f4ac94ffcb","toSide":"top"},
+		{"id":"35ab8f77271a24f9","fromNode":"9821d73bf1c11bf8","fromSide":"bottom","toNode":"3bcfc701314a6316","toSide":"top"},
+		{"id":"421f538d8806c0a2","fromNode":"9821d73bf1c11bf8","fromSide":"bottom","toNode":"f93fd2c5c871b13b","toSide":"top"}
+	]
+}
