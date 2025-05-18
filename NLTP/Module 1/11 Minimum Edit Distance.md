@@ -1,36 +1,13 @@
-# 12 Minimum Edit Distance: Introduction
-
 Minimum Edit Distance is a measure of similarity between two strings, calculated as the minimum number of single-character edits (insertions, deletions, or substitutions) required to change one string into the other.
-
-*(Refers to content from PDF3, Slides 1-7, 10)*
-
 ## How Similar Are Two Strings?
-*(Refers to content from PDF3, Slide 2; PDF5, Slide 2)*
-
 Many NLP tasks are concerned with measuring how similar two strings are.
 
 *   **Spell Correction:**
     *   User typed: "graffe"
     *   Which is closest? `graf`, `graft`, `grail`, `giraffe`
     *   Intuitively, "giraffe" (differs by one letter) seems more similar than "grail" or "graf". Minimum edit distance quantifies this.
-*   **Computational Biology:**
-    *   Aligning two sequences of nucleotides (e.g., DNA strands).
-    *   Example:
-        ```
-        AGGCTATCACCTGACCTCCAGGCCGATGCCC
-        TAGCTATCACGACCGCGGTCGATTTGCCCGAC
-        ```
-    *   Resulting alignment might look like:
-        ```
-        -AGGCTATCACCTGACCTCCAGGCCGA--TGCCC---
-        TAG-CTATCAC--GACCGC--GGTCGATTTGCCCGAC
-        ```
-        (where '-' indicates a gap/indel)
 *   **Other Applications:** Machine Translation, Information Extraction, Speech Recognition.
-
 ## Edit Distance
-*(Refers to content from PDF3, Slide 3)*
-
 *   **Definition:** Edit distance gives us a way to quantify intuitions about string similarity.
 *   **Minimum Edit Distance:** The minimum number of editing operations needed to transform one string into the other.
 *   **Basic Editing Operations:**
@@ -39,8 +16,6 @@ Many NLP tasks are concerned with measuring how similar two strings are.
     *   **Substitution:** Replacing one character with another.
 
 ## Minimum Edit Distance Example: Alignment
-*(Refers to content from PDF3, Slides 4, 5; PDF5, Slides 3, 4)*
-
 Consider transforming the string "INTENTION" to "EXECUTION".
 
 *   **Alignment:**
@@ -138,8 +113,6 @@ Consider transforming the string "INTENTION" to "EXECUTION".
         *(PDF3, Slide 5: "Distance between them is 8" if substitutions cost 2.)*
 
 ## Other Uses of Edit Distance in NLP
-*(Refers to content from PDF3, Slide 7; PDF5, Slide 5)*
-
 *   **Evaluating Machine Translation and Speech Recognition:**
     *   Word Error Rate (WER) and similar metrics use edit distance to compare system output with a reference translation/transcription.
     *   Example:
@@ -158,8 +131,6 @@ Consider transforming the string "INTENTION" to "EXECUTION".
         (Edit distance can help recognize these as referring to the same entities despite variations.)
 
 ## Defining Minimum Edit Distance Formally
-*(Refers to content from PDF3, Slide 10; PDF5, Slide 7)*
-
 *   **For two strings:**
     *   `X` of length `n` (source string)
     *   `Y` of length `m` (target string)

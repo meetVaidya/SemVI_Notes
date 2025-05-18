@@ -1,8 +1,3 @@
-## Core Questions in Evaluation
-
-*   Does our language model prefer good (grammatical, sensible) sentences to bad ones?
-*   Does it assign higher probability to "real" or "frequently observed" sentences than to "ungrammatical" or "rarely observed" sentences?
-
 ### Training and Test Sets
 *   We train the parameters of our model on a **training set**.
 *   We test the model's performance on data it hasn't seen before, called a **test set** (or held-out set).
