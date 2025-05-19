@@ -1,7 +1,3 @@
-# Referring Expressions and Referents
-
-(Content from PDF2 Slides 16-22)
-
 ## Reference Resolution: Key Terminology
 
 *   **Reference:** A linguistic expression used to denote an entity or individual.
@@ -17,9 +13,6 @@
 *   **Situational Context:** Real-world environment affecting reference.
 *   **Evoked:** First mention of a referent creates its representation in the discourse model.
 *   **Accessed:** Subsequent mentions access this representation.
-
-(Image context: PDF2 Slide 18 shows a diagram with figures in a discourse model, illustrating "Refer (evoke)" from "John" to a figure, and "Refer (access)" from a figure to "He", with "Corefer" between "John" and "He".)
-
 ## Types of Referring Expressions
 
 1.  **Indefinite Noun Phrases:** Introduce new entities.

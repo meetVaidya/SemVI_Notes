@@ -38,8 +38,7 @@ Coreference resolution is important for many NLP applications, including informa
     *   When a referent is first mentioned (evoked), a representation is created.
     *   Upon subsequent mention, this representation is accessed.
 
-(Image context: PDF2 Slide 7 shows a diagram of a "Discourse Model" with entities and arrows illustrating "evoke," "access," and "corefer" relationships between mentions like "Victoria" and "she".)
-
+![[Pasted image 20250519221614.png]]
 ## Coreference Resolution as a Two-Step Task
 
 Coreference resolution generally comprises two main sub-tasks (often performed jointly):
@@ -47,9 +46,7 @@ Coreference resolution generally comprises two main sub-tasks (often performed j
 2.  **Clustering Mentions:** Grouping these mentions into coreference chains.
 
 ## Anaphora vs. Coreference
-
-(Image context: PDF2 Slide 14 illustrates the difference. Coreference is about shared reference to a real-world entity. Anaphora is a linguistic dependency within the text.)
-
+![[Pasted image 20250519221849.png]]
 *   **Coreference** is about shared reference to an entity.
 *   **Anaphora** is about a linguistic dependency where one expression (anaphor) gets its meaning from another (antecedent) within the text.
 *   **Not All Anaphoric Relations are Coreferential:**

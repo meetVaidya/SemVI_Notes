@@ -3,7 +3,7 @@ Resolving coreferences, especially for pronouns, involves applying constraints t
 ## Reference Resolution Tasks
 
 1.  **Coreference Resolution:** Finding all expressions referring to the same entity.
-    *   **Constraint (Pleonastic 'it'):** 'It' that doesn't refer to a specific entity (e.g., "It's raining") must be handled.
+    *   **Constraint ('it'):** 'It' that doesn't refer to a specific entity (e.g., "It's raining") must be handled.
 2.  **Pronominal Anaphora Resolution:** Finding the antecedent for a single pronoun.
     *   Example: For "his," find "Ram" if Ram is the antecedent.
 
