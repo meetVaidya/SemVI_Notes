@@ -1,9 +1,7 @@
 Rule-based POS tagging is one of the oldest approaches. It relies on a dictionary (or lexicon) and a set of handwritten rules to assign POS tags to words.
 
-## Core Components
-
-(Image context: A handwritten diagram showing the flow: Input -> Tag Dictionary or Lexicon -> Handwritten rules -> output (Word,tag).)
-
+## Core Components:
+![[Pasted image 20250519183912.png]]
 1.  **Input**: A sentence.
 2.  **Tag Dictionary/Lexicon**:
     *   Used to assign all possible POS tags to the words in the given sentence.
@@ -45,48 +43,7 @@ Consider the sentence: **"He had a fly."**
         *   a   -> Article
         *   fly -> Noun (Verb tag eliminated)
 
-## Rules Based on Context
-
-Rules often rely on the context of the ambiguous word.
-
-(Image context: Two diagrams. First shows "Book" (Wn) with arrows from a preceding word (Wn-1) and to a following word (Wn+1). Second shows "Book" with arrows from a preceding tag (Tn-1) and to a following tag (Tn+1).)
-
-*   **Example 1: "Please book that flight"**
-    *   Rule-1: `if (the previous word is “to”) then eliminate all Noun tags` (e.g., for "to book").
-*   **Example 2: "I bought a Book."**
-    *   Rule-2: `if (the previous tag is an article) then eliminate all verb tags`.
-
-### Applying Rules - Eliminating Some POS
-
-(Image context: A sentence "She promised to back the bill" with potential tags. An arrow points from JJ to VB for "back", indicating JJ is eliminated. The rule "Eliminate VBN if VBD is an option when VBN|VBD follows “<start> PRP”" is mentioned.)
-
-Example: "She promised to back the bill"
-Initial tags might be:
-*   She: PRP
-*   promised: VBD
-*   to: TO
-*   back: VB, NN, RB, JJ (ambiguous)
-*   the: DT
-*   bill: NN
-
-A rule like "If 'back' follows 'to' (infinitival 'to'), prefer VB" would help disambiguate 'back'.
-
-## Summary of Rule-Based Tagger Characteristics
-
-*   It is the oldest approach and uses handwritten rules for tagging.
-*   Depends on a dictionary or lexicon to get possible tags for each word.
-*   Language experts create rules based on symbol patterns and linguistic features.
-*   Handwritten rules are used to identify the correct tag when a word has more than one possible tag.
-*   Disambiguation is done by analyzing the linguistic features of the word, its preceding word, following word, and other aspects.
-
-## Example: University Corpus
-
-*   Sentence: "I want to read a **book**."
-*   "Book" can be Noun or Verb.
-*   Rule: "Before **book**, determiner (a) is there, therefore it is a noun."
-
 ## Limitations of Rule-Based Approach
-
 *   **Hard-coded rules are required**: This is labor-intensive and requires significant linguistic expertise.
 *   **Rules need updates**: Rules have to be updated based on language change and evolution.
 *   **Inefficiency**: It needs to check the lexicon every time, which can be inefficient for large texts.

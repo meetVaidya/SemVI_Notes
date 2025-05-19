@@ -20,35 +20,8 @@ A sentence is ambiguous if it can be assigned more than one syntactic structure 
 
 Sentence: "I shot an elephant in my pajamas." (Groucho Marx)
 
-(Image context: A grammar and lexicon table.
-Grammar: S->NP VP, S->Aux NP VP, S->VP, NP->Pronoun, NP->Proper-Noun, NP->Det Nominal, Nominal->Noun, Nominal->Nominal Noun, Nominal->Nominal PP, VP->Verb, VP->Verb NP, VP->Verb NP PP, VP->Verb PP, VP->VP PP, PP->Preposition NP.
-Lexicon: Det->that|this|the|a, Noun->book|flight|meal|money, Verb->book|include|prefer, Pronoun->I|she|me, Proper-Noun->Houston|NWA, Aux->does, Preposition->from|to|on|near|through.)
-
 This sentence has two common interpretations, leading to two different parse trees:
-
-(Image context: Two parse trees for "I shot an elephant in my pajamas".
-Tree 1 (Humorous reading - elephant is in pajamas):
-S
-├── NP (I)
-└── VP
-    ├── Verb (shot)
-    └── NP
-        ├── Det (an)
-        └── Nominal
-            ├── Noun (elephant)
-            └── PP (in my pajamas)  <-- PP attaches to "elephant" (Nominal)
-
-Tree 2 (Shooter is in pajamas):
-S
-├── NP (I)
-└── VP
-    ├── VP
-    │   ├── Verb (shot)
-    │   └── NP
-    │       ├── Det (an)
-    │       └── Nominal (elephant)
-    └── PP (in my pajamas)  <-- PP attaches to the main VP ("shot an elephant")
-)
+![[Pasted image 20250519204833.png]]
 
 *   **Parse 1 (Left tree - humorous)**: The Prepositional Phrase "in my pajamas" modifies "elephant". (The elephant was wearing the pajamas).
     *   Structure: `NP → Nominal PP` (where Nominal is "elephant")

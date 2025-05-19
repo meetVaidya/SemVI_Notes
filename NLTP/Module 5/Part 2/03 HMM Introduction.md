@@ -1,22 +1,4 @@
-## Markov Chains
-
-*   **Definition**: Markov chains, named after Andrey Markov, are stochastic models that depict a sequence of possible events.
-*   **Markov Property (Memorylessness)**: Predictions or probabilities for the next state are based *solely* on the current (previous) event state, not the entire history of states before it.
-    *   In simple words, the probability that the (n+1)th step will be 'x' depends *only* on the nth step, not the complete sequence of steps that came before n.
-*   This property is known as the Markov Property or Memorylessness.
-
-(Image context: A diagram representing a two-state (E and A) Markov process. Arrows show transition probabilities: E to A (0.7), E to E (0.3), A to E (0.4), A to A (0.6).)
-*   Example: If the process is in state E, the probability it changes to state A is 0.7, and remains in E is 0.3. If in state A, probability to E is 0.4, and remains in A is 0.6.
-
-### Key Aspects of Markov Chains
-
-*   They tell us about the probabilities of sequences of random variables (states), where each state can take on values from some set.
-*   These sets can be words, tags, or symbols representing anything (e.g., weather conditions).
-
-(Image context: Two Markov chain diagrams. (a) Weather states: HOT, COLD, WARM with transition probabilities. (b) Word states: are, uniformly, charming with transition probabilities.)
-
 ### Markov Assumption
-
 *   If we want to predict the future in the sequence, all that matters is the **current state**.
 *   All states before the current state have no impact on the future *except via the current state*.
 

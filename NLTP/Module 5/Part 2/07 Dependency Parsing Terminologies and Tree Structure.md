@@ -7,7 +7,7 @@ Sentence: ‘I prefer the morning flight through Denver’
 - "morning" is `nmod` (nominal modifier) of "flight".
 - "Denver" is `nmod` (nominal modifier) of "flight" (or "prefer" depending on attachment, here shown modifying flight via "through").
 - "through" is `case` (case marker) for "Denver" in relation to "flight".)
-
+![[Pasted image 20250519192055.png]]
 ## Key Terminologies
 
 1.  **Head-Dependent**:
@@ -22,28 +22,24 @@ Sentence: ‘I prefer the morning flight through Denver’
 3.  **Grammar Functions and Arcs (Dependency Relations/Labels)**:
     *   The **tags** (labels) on the arcs between each Head-Dependent pair are grammar functions that determine the type of relationship.
     *   The **arrowhead carrying the tag** is called an Arc.
-
 ### Examples of Grammar Functions (Dependency Relations)
 
-(Image context: A table listing "Clausal Argument Relations", "Nominal Modifier Relations", and "Other Notable Relations" with their descriptions.)
+| Category                       | Relation | Description                                        |
+| ------------------------------ | -------- | -------------------------------------------------- |
+| **Clausal Argument Relations** | NSUBJ    | Nominal subject                                    |
+|                                | DOBJ     | Direct object                                      |
+|                                | IOBJ     | Indirect object                                    |
+|                                | CCOMP    | Clausal complement                                 |
+|                                | XCOMP    | Open clausal complement                            |
+| **Nominal Modifier Relations** | NMOD     | Nominal modifier                                   |
+|                                | AMOD     | Adjectival modifier                                |
+|                                | NUMMOD   | Numeric modifier                                   |
+|                                | APPOS    | Appositional modifier                              |
+|                                | DET      | Determiner                                         |
+|                                | CASE     | Prepositions, postpositions and other case markers |
+| **Other Notable Relations**    | CONJ     | Conjunct                                           |
+|                                | CC       | Coordinating conjunction                           |
 
-| Category                    | Relation | Description                                      |
-|-----------------------------|----------|--------------------------------------------------|
-| **Clausal Argument Relations** | NSUBJ    | Nominal subject                                  |
-|                             | DOBJ     | Direct object                                    |
-|                             | IOBJ     | Indirect object                                  |
-|                             | CCOMP    | Clausal complement                               |
-|                             | XCOMP    | Open clausal complement                          |
-| **Nominal Modifier Relations**| NMOD     | Nominal modifier                                 |
-|                             | AMOD     | Adjectival modifier                              |
-|                             | NUMMOD   | Numeric modifier                                 |
-|                             | APPOS    | Appositional modifier                            |
-|                             | DET      | Determiner                                       |
-|                             | CASE     | Prepositions, postpositions and other case markers |
-| **Other Notable Relations**   | CONJ     | Conjunct                                         |
-|                             | CC       | Coordinating conjunction                         |
-
-(Image context: A table showing examples for various relations, highlighting the head and dependent words in example sentences.)
 Examples:
 *   **NSUBJ**: United **canceled** the *flight*. (canceled -> United)
 *   **DOBJ**: United diverted the **flight** to *Reno*. (flight -> Reno, or diverted -> flight) - The example shows "United diverted the **flight** to Reno." with flight as dependent. A better example: "She reads **books**." (reads -> books)
@@ -52,12 +48,6 @@ Examples:
 *   **AMOD**: Book the **cheapest** *flight*. (flight -> cheapest)
 *   **DET**: **The** *flight* was canceled. (flight -> The)
 *   **CASE**: Book the flight **through** *Houston*. (Houston -> through, or flight -> through depending on what "through Houston" modifies)
-
-## Understanding the Dependency Parse Tree
-
-*   Dependencies are represented as a **directed graph G = (V, A)**.
-    *   **V (set of vertices)**: Represents words (and punctuation marks) in the sentence.
-    *   **A (set of arcs)**: Represents the grammar relationships (dependencies) between elements of V.
 
 ### Features of a Dependency Parse Tree
 
@@ -70,17 +60,6 @@ A dependency parse tree (as a directed graph) has the following features:
 ## Projectivity
 
 *   **Projective Arc**: An arc/arrow (with its tag) is projective if the 'Head' associated with the arc has a path to reach *every word that lies linearly between the Head and the Dependent* in the sentence.
-
-(Image context: A dependency parse tree for "United canceled the morning flights to Houston".
-`canceled` is root.
-`canceled` -> `United` (nsubj)
-`canceled` -> `flights` (dobj)
-`flights` -> `the` (det)
-`flights` -> `morning` (nmod)
-`flights` -> `Houston` (nmod)
-`Houston` -> `to` (case)
-)
-
 ### Explanation of Projectivity
 
 *   **Example 1**: Arc between ‘the’ & ‘flights’ (`flights` -> `the`).
