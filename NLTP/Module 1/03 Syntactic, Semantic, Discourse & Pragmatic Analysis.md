@@ -31,7 +31,7 @@ A parse tree is a hierarchical representation of the syntactic structure of a se
     VP branches to V ("ate") and NP (right).
     NP (right) branches to ART ("the") and N ("apple").)*
 
-## 2. Semantic Analysis
+## 2. [[03.1 Semantic Analysis|Semantic Analysis]]
 *   **Level of Analysis:** Sentence-Level Analysis.
 *   **Focus:** Determining the meaning of words, phrases, and sentences. It goes beyond grammatical structure to interpret the actual message.
 *   **Definition:** Semantics refers to meaning.

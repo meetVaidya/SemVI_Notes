@@ -25,10 +25,8 @@ Understanding word structure is crucial in many Natural Language Processing task
 
 ## Inflection vs Derivation
 
-| Aspect      | Inflection              | Derivation                 |
-|-------------|--------------------------|-----------------------------|
-| Meaning     | Does not change meaning  | Often changes word meaning |
-| POS Change  | Usually retains POS      | Often changes POS          |
-| Examples    | walk → walked            | happy → unhappiness        |
-
-(Image context: Diagram showing breakdown of "unbelievable" into morphemes: un- + believe + -able)
+| Aspect     | Inflection              | Derivation                 |
+| ---------- | ----------------------- | -------------------------- |
+| Meaning    | Does not change meaning | Often changes word meaning |
+| POS Change | Usually retains POS     | Often changes POS          |
+| Examples   | walk → walked           | happy → unhappiness        |
