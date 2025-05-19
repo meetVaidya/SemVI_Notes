@@ -5,8 +5,6 @@ Long Short-Term Memory (LSTM) networks are a special kind of Recurrent Neural Ne
 *   **Difficulty with Distant Information:** Standard RNNs find it difficult to make use of information that is distant from the current point of processing, especially during training due to vanishing gradients.
 *   **Local Context Bias:** The information encoded in the hidden states of simple RNNs tends to be local, more relevant to the most recent parts of the input sequence and recent decisions.
 
-LSTMs and GRUs (Gated Recurrent Units) were developed to overcome these limitations.
-
 ## Long Short-Term Memory (LSTM)
 
 *   **Type of RNN:** LSTMs have a similar overall architecture to RNNs, processing data sequentially.
@@ -53,10 +51,10 @@ Decides what information from the previous cell state $C_{t-1}$ should be thrown
 
 #### 2. Input Gate ($i_t$) and Candidate Cell State ($C̃_t$)
 Decides what new information will be stored in the cell state. This has two parts:
-    a.  **Input Gate Layer ($i_t$):** A sigmoid layer that decides which values to update.
-        *   **Equation:** $i_t = σ(W_i * [h_{t-1}, x_t] + b_i)$
-    b.  **Candidate Values Layer ($C̃_t$):** A tanh layer that creates a vector of new candidate values that could be added to the state.
-        *   **Equation:** $C̃_t = tanh(W_C * [h_{t-1}, x_t] + b_C)$
+1. **Input Gate Layer ($i_t$):** A sigmoid layer that decides which values to update.
+	- **Equation:** $i_t = σ(W_i * [h_{t-1}, x_t] + b_i)$
+2. **Candidate Values Layer ($C̃_t$):** A tanh layer that creates a vector of new candidate values that could be added to the state.
+	- **Equation:** $C̃_t = tanh(W_C * [h_{t-1}, x_t] + b_C)$
 
 #### 3. Cell State Update ($C_t$)
 Update the old cell state $C_{t-1}$ into the new cell state $C_t$.
@@ -66,13 +64,9 @@ Update the old cell state $C_{t-1}$ into the new cell state $C_t$.
 #### 4. Output Gate ($o_t$) and Hidden State ($h_t$)
 Decides what the next hidden state (output of the LSTM cell for this time step) should be.
 The output will be based on the cell state $C_t$, but will be a filtered version.
-    a.  **Output Gate Layer ($o_t$):** A sigmoid layer that decides which parts of the cell state to output.
-        *   **Equation:** $o_t = σ(W_o * [h_{t-1}, x_t] + b_o)$
-    b.  **Hidden State ($h_t$):** Pass the cell state $C_t$ through tanh (to push values between -1 and 1) and multiply it by the output of the output gate $o_t$.
-        *   **Equation:** $h_t = o_t * tanh(C_t)$
+1. **Output Gate Layer ($o_t$):** A sigmoid layer that decides which parts of the cell state to output.
+	- **Equation:** $o_t = σ(W_o * [h_{t-1}, x_t] + b_o)$
+2. **Hidden State ($h_t$):** Pass the cell state $C_t$ through tanh (to push values between -1 and 1) and multiply it by the output of the output gate $o_t$.
+	- **Equation:** $h_t = o_t * tanh(C_t)$
 
 This $h_t$ is the output for the current time step and is also fed as $h_{t-1}$ to the next time step. The $C_t$ is passed to the next time step as $C_{t-1}$.
-
-### Example of LSTM Overcoming Short-Term Memory
-LSTMs, with their cell state and gating mechanisms, are better equipped to carry relevant context (like "Last year" vs. "Today") over longer sequences to make appropriate predictions.
-LSTMs can learn to use the forget gate to discard outdated context (like "samosa") and the input gate to incorporate new relevant context (like "pasta and cheese").

@@ -6,9 +6,6 @@ Stacked RNNs involve using multiple recurrent hidden layers.
 *   **Considerations:**
     *   The optimal number of stacked layers is application-specific and often determined empirically.
     *   Training costs (computational resources and time) increase significantly as the number of stacks (layers) increases.
-
-(Image context: A diagram of a Stacked RNN with three layers (RNN 1, RNN 2, RNN 3). Inputs `x1, x2, x3...xn` feed into RNN 1. The output sequence of RNN 1 feeds into RNN 2, and RNN 2's output sequence feeds into RNN 3. The final outputs `y1, y2, y3...yn` (or a single output `yn` for sequence classification) come from RNN 3.)
-
 ## Vanishing and Exploding Gradients
 
 These are common problems encountered during the training of deep neural networks, especially RNNs, due to the nature of backpropagation through many layers (or time steps in unrolled RNNs).

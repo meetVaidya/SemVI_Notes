@@ -1,7 +1,6 @@
 Autoregressive models, particularly RNNs, are fundamental to sequence generation tasks. They generate sequences one element at a time, with each new element conditioned on the previously generated ones.
 
 ## What is an Autoregressive RNN?
-
 *   **Sequence Generation Model:** An autoregressive RNN predicts the next word (or element) in a sequence based on the words it has generated so far.
 *   **Key Characteristic:** The model uses its **own generated outputs as inputs** for the subsequent step. This recursive feedback is central to autoregression.
 *   **Common Uses:**

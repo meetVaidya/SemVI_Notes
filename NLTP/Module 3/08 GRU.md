@@ -82,8 +82,3 @@ The training process for a GRU network is similar to that of a basic RNN or LSTM
 | Efficiency     | Less computationally efficient | More computationally efficient               |
 | Popularity     | Widely used, established       | Gaining popularity, often performs similarly |
 | Invention Year | 1995-1997                      | 2014                                         |
-### Example Scenario for GRU
-*   When processing "Dhaval eats samosa...", the hidden state $h_t$ accumulates information about Indian cuisine.
-*   When "His brother Bhavin... pasta and cheese" appears:
-    *   The **reset gate ($r_t$)** might activate to "forget" or reduce the influence of the "samosa/Indian" context when calculating the candidate hidden state for "pasta".
-    *   The **update gate ($z_t$)** would then allow the new information related to "pasta/Italian" (from $h̃_t$) to largely form the new hidden state $h_t$, effectively updating the context.
