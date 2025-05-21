@@ -1,7 +1,5 @@
 ## Definition
-
-- By formal definition, Reinforcement Learning is the area of machine learning in which the objective is to train the an artificial agent in a stochastic environment to perform a certain task by letting it interact with the environment repeatedly.
-- The agent aims to learn from its interaction with the surrounding environment, hence there is no external “teacher” to provide correct actions to the agent. Instead a reward function is set to provide the agent the evaluation of whether it is going in the right direction
+- RL is a framework for solving controlled task also called as **decision problems** by building agents that learn from environment by interacting with it through trial and error by receiving rewards that are positive or negative as unique feedback.
 
 ## Terms in RL
 

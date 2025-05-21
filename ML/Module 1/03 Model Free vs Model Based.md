@@ -18,6 +18,10 @@
 
 > Think of it like learning to drive by **trial and error** on the road.
 
+### Value Based Model
+- The Value Based approach is about finding the optimal value function, which is the maximum value at a state under any policy
+- Therefore, the agent expects the long-term return at any state under policy $\pi$
+
 ### Summary:
 
 | Feature           | Model-Based RL          | Model-Free RL |
