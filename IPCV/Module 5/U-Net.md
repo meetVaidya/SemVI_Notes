@@ -16,7 +16,7 @@
 3. **Expansive Path (Decoder/Upsampling Path)**:
     - This path restores the original spatial resolution of the image for precise localization.
     - It uses **Up-Convolution (Transposed Convolution)** layers (e.g., 2x2 up-conv) to increase spatial dimensions of the feature maps.
-    - Features from this pathway are combined with corresponding feature maps from the contracting path via skip connections (discussed below).
+    - Features from this pathway are combined with corresponding feature maps from the contracting path via skip connections.
 4. **Skip Connections**:
     - These connections link corresponding layers between the contracting and expansive paths by copying feature maps from the encoder to the decoder.
     - Purpose: Preserve fine-grained spatial details (e.g., edges, precise boundaries) that might be lost during downsampling, ensuring better segmentation accuracy.
